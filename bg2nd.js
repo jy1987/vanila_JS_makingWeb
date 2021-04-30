@@ -1,6 +1,6 @@
 const body = document.querySelector("body");
 const backImg = body.querySelector(".js-clock");
-const inputImg = backImg.querySelector("div");
+const inputImg = backImg.querySelector("img");
 
 const IMG_NUMBER = 7;
 let initNum = 1;
@@ -18,8 +18,9 @@ function paintImage() {
   /*const image = new Image();
   image.src = `images/${k}.jpg`;
   image.classList.add("bgImage");*/
-
-  inputImg.innerHTML = ` <img src="images/${k}.jpg" class="bgImage" />`;
+  inputImg.src = `images/${k}.jpg`;
+  inputImg.classList.add("bgImage");
+  /*inputImg.innerHTML = ` <img src="images/${k}.jpg" class="bgImage" />`; 얘도 사용 가능하나 차이는 텀이 생긴다는거?*/
 }
 
 /*function makeAllImg() {
@@ -28,7 +29,7 @@ function paintImage() {
   }
 }*/
 function init() {
-  setInterval(paintImage, 5000);
+  setInterval(paintImage, 7000);
   paintImage();
 }
 
