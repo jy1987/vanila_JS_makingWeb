@@ -2,7 +2,7 @@ const body = document.querySelector("body");
 const backImg = body.querySelector(".js-clock");
 const inputImg = backImg.querySelector("img");
 
-const IMG_NUMBER = 7;
+const IMG_NUMBER = 11;
 let initNum = 1;
 let factor = Date.now();
 
@@ -13,7 +13,7 @@ function genRandom() {
 
 function paintImage() {
   genRandom();
-  console.log(genRandom());
+
   const k = genRandom();
   /*const image = new Image();
   image.src = `images/${k}.jpg`;
@@ -29,7 +29,7 @@ function paintImage() {
   }
 }*/
 function init() {
-  setInterval(paintImage, 7000);
+  setInterval(paintImage, 5000);
   paintImage();
 }
 
