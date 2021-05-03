@@ -41,19 +41,25 @@
 .js-toDoList {
   text-align: center;
   height: 100px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
-.js-weather {
+.js-weather__current {
   display: block;
   text-align: end;
   margin-right: 20px;
+  bottom: 30px;
+  color: white;
+}
+.js-weather {
+  background: none;
 }
 .showing {
   display: block;
 }
 
-h2 {
+h2,
+p {
   color: white;
 }
 .js-toDoList {
@@ -94,5 +100,9 @@ h2 {
 }
 
 .js-weather {
+  color: white;
+}
+
+.js-weather__location {
   color: white;
 }
